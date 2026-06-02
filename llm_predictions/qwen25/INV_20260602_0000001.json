@@ -1,0 +1,37 @@
+{
+  "items": [
+    {
+      "item_name": "bän quyén phän mém OCR",
+      "quantity": 1,
+      "unit_price": 1100000,
+      "amount_before_tax": 1100000
+    }
+  ],
+  "invoice_info": {
+    "invoice_no": "0000001",
+    "issue_date": "2026-06-02",
+    "currency": "VND"
+  },
+  "seller_info": {
+    "tax_code": "0101234567",
+    "legal_name": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE",
+    "address": ""
+  },
+  "buyer_info": {
+    "tax_code": "0302867825",
+    "legal_name": "DOANH NGHIỆP TƯ NHÂN GAMMA",
+    "address": ""
+  },
+  "totals": {
+    "total_amount_after_tax": 2640000.0,
+    "total_amount_before_tax": 1100000.0,
+    "total_tax_amount": 0.0
+  },
+  "validation_errors": [],
+  "ai_metadata": {
+    "overall_confidence": 1.0
+  },
+  "workflow": {
+    "status": "VALID"
+  }
+}

@@ -1,0 +1,259 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AI-Invoice Schema V1",
+  "type": "object",
+  "properties": {
+    "document_id": {
+      "type": "string",
+      "description": "ID nội bộ của hệ thống (VD: INV_20260602_000001)"
+    },
+    "source_file": {
+      "type": "string",
+      "description": "Tên file gốc để dễ dàng truy vết (VD: INV_20260602_000001.pdf)"
+    },
+    "workflow": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "OCR_DONE",
+            "AI_EXTRACTED",
+            "PENDING_REVIEW",
+            "APPROVED",
+            "REJECTED",
+            "EXPORTED"
+          ],
+          "description": "Trạng thái xử lý của hóa đơn"
+        }
+      },
+      "required": [
+        "status"
+      ]
+    },
+    "ai_metadata": {
+      "type": "object",
+      "properties": {
+        "ocr_engine": {
+          "type": "string",
+          "description": "Engine OCR sử dụng (VD: PaddleOCR, VietOCR)"
+        },
+        "llm_model": {
+          "type": "string",
+          "description": "Model LLM sử dụng (VD: Qwen2.5, Qwen3)"
+        },
+        "ocr_version": {
+          "type": "string",
+          "description": "Phiên bản của model (VD: 1.0.0)"
+        },
+        "processed_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Thời gian xử lý"
+        },
+        "overall_confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Độ tin cậy tổng quan của bản trích xuất"
+        }
+      }
+    },
+    "invoice_info": {
+      "type": "object",
+      "properties": {
+        "invoice_type": {
+          "type": "string"
+        },
+        "form_no": {
+          "type": "string"
+        },
+        "serial_no": {
+          "type": "string"
+        },
+        "invoice_no": {
+          "type": "string"
+        },
+        "issue_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "currency": {
+          "type": "string",
+          "default": "VND"
+        },
+        "exchange_rate": {
+          "type": "number",
+          "default": 1
+        },
+        "payment_method": {
+          "type": "string"
+        },
+        "lookup_code": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "invoice_type",
+        "form_no",
+        "serial_no",
+        "invoice_no",
+        "issue_date",
+        "currency"
+      ]
+    },
+    "seller_info": {
+      "type": "object",
+      "properties": {
+        "tax_code": {
+          "type": "string"
+        },
+        "legal_name": {
+          "type": "string"
+        },
+        "address": {
+          "type": "string"
+        },
+        "bank_account": {
+          "type": "string"
+        },
+        "bank_name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "tax_code",
+        "legal_name",
+        "address"
+      ]
+    },
+    "buyer_info": {
+      "type": "object",
+      "properties": {
+        "tax_code": {
+          "type": "string"
+        },
+        "legal_name": {
+          "type": "string"
+        },
+        "buyer_name": {
+          "type": "string"
+        },
+        "address": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "legal_name"
+      ]
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "line_number": {
+            "type": "integer"
+          },
+          "item_code": {
+            "type": "string"
+          },
+          "item_name": {
+            "type": "string"
+          },
+          "unit": {
+            "type": "string"
+          },
+          "quantity": {
+            "type": "number"
+          },
+          "unit_price": {
+            "type": "number"
+          },
+          "amount_before_tax": {
+            "type": "number"
+          },
+          "tax_rate": {
+            "type": "number"
+          },
+          "tax_amount": {
+            "type": "number"
+          },
+          "discount_amount": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "item_name",
+          "amount_before_tax"
+        ]
+      }
+    },
+    "tax_info": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "tax_rate": {
+            "type": "number"
+          },
+          "taxable_amount": {
+            "type": "number"
+          },
+          "tax_amount": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "tax_rate",
+          "taxable_amount",
+          "tax_amount"
+        ]
+      }
+    },
+    "totals": {
+      "type": "object",
+      "properties": {
+        "total_amount_before_tax": {
+          "type": "number"
+        },
+        "total_tax_amount": {
+          "type": "number"
+        },
+        "total_discount_amount": {
+          "type": "number"
+        },
+        "total_amount_after_tax": {
+          "type": "number"
+        },
+        "amount_in_words": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "total_amount_before_tax",
+        "total_tax_amount",
+        "total_amount_after_tax",
+        "amount_in_words"
+      ]
+    },
+    "validation_errors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Chứa mã lỗi validation nếu có (VD: TOTAL_MISMATCH)"
+    }
+  },
+  "required": [
+    "document_id",
+    "source_file",
+    "workflow",
+    "ai_metadata",
+    "invoice_info",
+    "seller_info",
+    "buyer_info",
+    "items",
+    "totals"
+  ]
+}

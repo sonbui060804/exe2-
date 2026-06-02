@@ -1,0 +1,19 @@
+Bạn là Senior Vietnamese Accounting Data Annotator.
+
+Nhiệm vụ:
+Từ OCR text dưới đây, hãy tạo file Ground Truth chuẩn 100%.
+
+QUY TẮC:
+1. Không suy diễn.
+2. Chỉ lấy dữ liệu nhìn thấy.
+3. Sửa lỗi OCR rõ ràng:
+   * CöNG -> CÔNG
+   * Do'n -> Đơn
+   * thué -> thuế
+4. Kiểm tra toán học:
+   subtotal + tax = grand_total
+5. Output chỉ JSON.
+6. JSON phải tuân thủ invoice_schema_v1.
+
+OCR_TEXT:
+{{OCR_TEXT}}

@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "item_name": "bän quyên phän mém OCR",
+      "quantity": 1,
+      "unit_price": 3400000,
+      "amount_before_tax": 3400000
+    },
+    {
+      "item_name": "dich vu bäo tri hé thóng",
+      "quantity": 10,
+      "unit_price": 80000,
+      "amount_before_tax": 800000
+    }
+  ],
+  "invoice_info": {
+    "invoice_no": "0000010",
+    "issue_date": "2026-06-02",
+    "payment_method": "TM/CK",
+    "currency": "VND"
+  },
+  "seller_info": {
+    "tax_code": "0101234567",
+    "legal_name": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE",
+    "address": ""
+  },
+  "buyer_info": {
+    "tax_code": "0302556017",
+    "legal_name": "CÔNG TY TNHH THƯƠNG MẠI ALPHA",
+    "address": ""
+  },
+  "totals": {
+    "total_amount_after_tax": 4620000.0,
+    "total_amount_before_tax": 4200000.0,
+    "total_tax_amount": 0.0
+  },
+  "validation_errors": [],
+  "ai_metadata": {
+    "overall_confidence": 1.0
+  },
+  "workflow": {
+    "status": "VALID"
+  }
+}

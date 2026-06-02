@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "item_name": "bản quyền phần mềm OCR",
+      "quantity": 1,
+      "unit_price": 4500000,
+      "amount_before_tax": 4500000
+    },
+    {
+      "item_name": "dịch vụ bảo trì hệ thống",
+      "quantity": 10,
+      "unit_price": 140000,
+      "amount_before_tax": 1400000
+    }
+  ],
+  "invoice_info": {
+    "invoice_no": "0000013",
+    "issue_date": "2026-06-02",
+    "payment_method": "TM/CK",
+    "currency": "VND"
+  },
+  "seller_info": {
+    "tax_code": "0101234567",
+    "legal_name": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE",
+    "address": ""
+  },
+  "buyer_info": {
+    "tax_code": "0302322047",
+    "legal_name": "CÔNG TY CỔ PHẦN BETA",
+    "address": ""
+  },
+  "totals": {
+    "total_amount_after_tax": 6490000.0,
+    "total_amount_before_tax": 5900000.0,
+    "total_tax_amount": 0.0
+  },
+  "validation_errors": [],
+  "ai_metadata": {
+    "overall_confidence": 1.0
+  },
+  "workflow": {
+    "status": "VALID"
+  }
+}

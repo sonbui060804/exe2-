@@ -1,0 +1,1141 @@
+{
+  "metrics": {
+    "total_documents": 20,
+    "perfect_documents": 0,
+    "fields": {
+      "invoice_info.invoice_no": {
+        "TP": 20,
+        "FP": 0,
+        "FN": 0,
+        "TN": 0,
+        "accuracy": 100.0,
+        "precision": 100.0,
+        "recall": 100.0,
+        "f1": 100.0
+      },
+      "invoice_info.issue_date": {
+        "TP": 20,
+        "FP": 0,
+        "FN": 0,
+        "TN": 0,
+        "accuracy": 100.0,
+        "precision": 100.0,
+        "recall": 100.0,
+        "f1": 100.0
+      },
+      "seller_info.tax_code": {
+        "TP": 20,
+        "FP": 0,
+        "FN": 0,
+        "TN": 0,
+        "accuracy": 100.0,
+        "precision": 100.0,
+        "recall": 100.0,
+        "f1": 100.0
+      },
+      "seller_info.legal_name": {
+        "TP": 20,
+        "FP": 0,
+        "FN": 0,
+        "TN": 0,
+        "accuracy": 100.0,
+        "precision": 100.0,
+        "recall": 100.0,
+        "f1": 100.0
+      },
+      "buyer_info.tax_code": {
+        "TP": 20,
+        "FP": 0,
+        "FN": 0,
+        "TN": 0,
+        "accuracy": 100.0,
+        "precision": 100.0,
+        "recall": 100.0,
+        "f1": 100.0
+      },
+      "buyer_info.legal_name": {
+        "TP": 20,
+        "FP": 0,
+        "FN": 0,
+        "TN": 0,
+        "accuracy": 100.0,
+        "precision": 100.0,
+        "recall": 100.0,
+        "f1": 100.0
+      },
+      "totals.total_amount_before_tax": {
+        "TP": 16,
+        "FP": 4,
+        "FN": 0,
+        "TN": 0,
+        "accuracy": 80.0,
+        "precision": 80.0,
+        "recall": 100.0,
+        "f1": 88.8888888888889
+      },
+      "totals.total_tax_amount": {
+        "TP": 0,
+        "FP": 20,
+        "FN": 0,
+        "TN": 0,
+        "accuracy": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "totals.total_amount_after_tax": {
+        "TP": 20,
+        "FP": 0,
+        "FN": 0,
+        "TN": 0,
+        "accuracy": 100.0,
+        "precision": 100.0,
+        "recall": 100.0,
+        "f1": 100.0
+      }
+    },
+    "document_accuracy": 0.0
+  },
+  "document_details": [
+    {
+      "document_id": "INV_20260602_0000001",
+      "fields": {
+        "invoice_info.invoice_no": {
+          "ground_truth": "0000001",
+          "prediction": "0000001",
+          "status": "MATCH"
+        },
+        "invoice_info.issue_date": {
+          "ground_truth": "2026-06-02",
+          "prediction": "2026-06-02",
+          "status": "MATCH"
+        },
+        "seller_info.tax_code": {
+          "ground_truth": "0101234567",
+          "prediction": "0101234567",
+          "status": "MATCH"
+        },
+        "seller_info.legal_name": {
+          "ground_truth": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE",
+          "prediction": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE",
+          "status": "MATCH"
+        },
+        "buyer_info.tax_code": {
+          "ground_truth": "0302867825",
+          "prediction": "0302867825",
+          "status": "MATCH"
+        },
+        "buyer_info.legal_name": {
+          "ground_truth": "DOANH NGHIỆP TƯ NHÂN GAMMA",
+          "prediction": "DOANH NGHIỆP TƯ NHÂN GAMMA",
+          "status": "MATCH"
+        },
+        "totals.total_amount_before_tax": {
+          "ground_truth": 2400000,
+          "prediction": 1100000.0,
+          "status": "VALUE_MISMATCH"
+        },
+        "totals.total_tax_amount": {
+          "ground_truth": 240000,
+          "prediction": 0.0,
+          "status": "VALUE_MISMATCH"
+        },
+        "totals.total_amount_after_tax": {
+          "ground_truth": 2640000,
+          "prediction": 2640000.0,
+          "status": "MATCH"
+        }
+      },
+      "document_perfect": false,
+      "error_count": 2
+    },
+    {
+      "document_id": "INV_20260602_0000002",
+      "fields": {
+        "invoice_info.invoice_no": {
+          "ground_truth": "0000002",
+          "prediction": "0000002",
+          "status": "MATCH"
+        },
+        "invoice_info.issue_date": {
+          "ground_truth": "2026-06-02",
+          "prediction": "2026-06-02",
+          "status": "MATCH"
+        },
+        "seller_info.tax_code": {
+          "ground_truth": "0101234567",
+          "prediction": "0101234567",
+          "status": "MATCH"
+        },
+        "seller_info.legal_name": {
+          "ground_truth": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE",
+          "prediction": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE",
+          "status": "MATCH"
+        },
+        "buyer_info.tax_code": {
+          "ground_truth": "0304744854",
+          "prediction": "0304744854",
+          "status": "MATCH"
+        },
+        "buyer_info.legal_name": {
+          "ground_truth": "CÔNG TY TNHH THƯƠNG MẠI ALPHA",
+          "prediction": "CÔNG TY TNHH THƯƠNG MẠI ALPHA",
+          "status": "MATCH"
+        },
+        "totals.total_amount_before_tax": {
+          "ground_truth": 2600000,
+          "prediction": 2600000.0,
+          "status": "MATCH"
+        },
+        "totals.total_tax_amount": {
+          "ground_truth": 260000,
+          "prediction": 0.0,
+          "status": "VALUE_MISMATCH"
+        },
+        "totals.total_amount_after_tax": {
+          "ground_truth": 2860000,
+          "prediction": 2860000.0,
+          "status": "MATCH"
+        }
+      },
+      "document_perfect": false,
+      "error_count": 1
+    },
+    {
+      "document_id": "INV_20260602_0000003",
+      "fields": {
+        "invoice_info.invoice_no": {
+          "ground_truth": "0000003",
+          "prediction": "0000003",
+          "status": "MATCH"
+        },
+        "invoice_info.issue_date": {
+          "ground_truth": "2026-06-02",
+          "prediction": "2026-06-02",
+          "status": "MATCH"
+        },
+        "seller_info.tax_code": {
+          "ground_truth": "0101234567",
+          "prediction": "0101234567",
+          "status": "MATCH"
+        },
+        "seller_info.legal_name": {
+          "ground_truth": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE",
+          "prediction": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE",
+          "status": "MATCH"
+        },
+        "buyer_info.tax_code": {
+          "ground_truth": "0302458591",
+          "prediction": "0302458591",
+          "status": "MATCH"
+        },
+        "buyer_info.legal_name": {
+          "ground_truth": "DOANH NGHIỆP TƯ NHÂN GAMMA",
+          "prediction": "DOANH NGHIỆP TƯ NHÂN GAMMA",
+          "status": "MATCH"
+        },
+        "totals.total_amount_before_tax": {
+          "ground_truth": 6500000,
+          "prediction": 6500000.0,
+          "status": "MATCH"
+        },
+        "totals.total_tax_amount": {
+          "ground_truth": 650000,
+          "prediction": 0.0,
+          "status": "VALUE_MISMATCH"
+        },
+        "totals.total_amount_after_tax": {
+          "ground_truth": 7150000,
+          "prediction": 7150000.0,
+          "status": "MATCH"
+        }
+      },
+      "document_perfect": false,
+      "error_count": 1
+    },
+    {
+      "document_id": "INV_20260602_0000004",
+      "fields": {
+        "invoice_info.invoice_no": {
+          "ground_truth": "0000004",
+          "prediction": "0000004",
+          "status": "MATCH"
+        },
+        "invoice_info.issue_date": {
+          "ground_truth": "2026-06-02",
+          "prediction": "2026-06-02",
+          "status": "MATCH"
+        },
+        "seller_info.tax_code": {
+          "ground_truth": "0101234567",
+          "prediction": "0101234567",
+          "status": "MATCH"
+        },
+        "seller_info.legal_name": {
+          "ground_truth": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE",
+          "prediction": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE",
+          "status": "MATCH"
+        },
+        "buyer_info.tax_code": {
+          "ground_truth": "0301499914",
+          "prediction": "0301499914",
+          "status": "MATCH"
+        },
+        "buyer_info.legal_name": {
+          "ground_truth": "CÔNG TY TNHH THƯƠNG MẠI ALPHA",
+          "prediction": "CÔNG TY TNHH THƯƠNG MẠI ALPHA",
+          "status": "MATCH"
+        },
+        "totals.total_amount_before_tax": {
+          "ground_truth": 2600000,
+          "prediction": 2600000.0,
+          "status": "MATCH"
+        },
+        "totals.total_tax_amount": {
+          "ground_truth": 260000,
+          "prediction": 0.0,
+          "status": "VALUE_MISMATCH"
+        },
+        "totals.total_amount_after_tax": {
+          "ground_truth": 2860000,
+          "prediction": 2860000.0,
+          "status": "MATCH"
+        }
+      },
+      "document_perfect": false,
+      "error_count": 1
+    },
+    {
+      "document_id": "INV_20260602_0000005",
+      "fields": {
+        "invoice_info.invoice_no": {
+          "ground_truth": "0000005",
+          "prediction": "0000005",
+          "status": "MATCH"
+        },
+        "invoice_info.issue_date": {
+          "ground_truth": "2026-06-02",
+          "prediction": "2026-06-02",
+          "status": "MATCH"
+        },
+        "seller_info.tax_code": {
+          "ground_truth": "0101234567",
+          "prediction": "0101234567",
+          "status": "MATCH"
+        },
+        "seller_info.legal_name": {
+          "ground_truth": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE",
+          "prediction": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE",
+          "status": "MATCH"
+        },
+        "buyer_info.tax_code": {
+          "ground_truth": "0309478454",
+          "prediction": "0309478454",
+          "status": "MATCH"
+        },
+        "buyer_info.legal_name": {
+          "ground_truth": "CÔNG TY TNHH THƯƠNG MẠI ALPHA",
+          "prediction": "CÔNG TY TNHH THƯƠNG MẠI ALPHA",
+          "status": "MATCH"
+        },
+        "totals.total_amount_before_tax": {
+          "ground_truth": 5300000,
+          "prediction": 5300000.0,
+          "status": "MATCH"
+        },
+        "totals.total_tax_amount": {
+          "ground_truth": 530000,
+          "prediction": 0.0,
+          "status": "VALUE_MISMATCH"
+        },
+        "totals.total_amount_after_tax": {
+          "ground_truth": 5830000,
+          "prediction": 5830000.0,
+          "status": "MATCH"
+        }
+      },
+      "document_perfect": false,
+      "error_count": 1
+    },
+    {
+      "document_id": "INV_20260602_0000006",
+      "fields": {
+        "invoice_info.invoice_no": {
+          "ground_truth": "0000006",
+          "prediction": "0000006",
+          "status": "MATCH"
+        },
+        "invoice_info.issue_date": {
+          "ground_truth": "2026-06-02",
+          "prediction": "2026-06-02",
+          "status": "MATCH"
+        },
+        "seller_info.tax_code": {
+          "ground_truth": "0101234567",
+          "prediction": "0101234567",
+          "status": "MATCH"
+        },
+        "seller_info.legal_name": {
+          "ground_truth": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE",
+          "prediction": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE",
+          "status": "MATCH"
+        },
+        "buyer_info.tax_code": {
+          "ground_truth": "0304335942",
+          "prediction": "0304335942",
+          "status": "MATCH"
+        },
+        "buyer_info.legal_name": {
+          "ground_truth": "DOANH NGHIỆP TƯ NHÂN GAMMA",
+          "prediction": "DOANH NGHIỆP TƯ NHÂN GAMMA",
+          "status": "MATCH"
+        },
+        "totals.total_amount_before_tax": {
+          "ground_truth": 6200000,
+          "prediction": 6200000.0,
+          "status": "MATCH"
+        },
+        "totals.total_tax_amount": {
+          "ground_truth": 620000,
+          "prediction": 0.0,
+          "status": "VALUE_MISMATCH"
+        },
+        "totals.total_amount_after_tax": {
+          "ground_truth": 6820000,
+          "prediction": 6820000.0,
+          "status": "MATCH"
+        }
+      },
+      "document_perfect": false,
+      "error_count": 1
+    },
+    {
+      "document_id": "INV_20260602_0000007",
+      "fields": {
+        "invoice_info.invoice_no": {
+          "ground_truth": "0000007",
+          "prediction": "0000007",
+          "status": "MATCH"
+        },
+        "invoice_info.issue_date": {
+          "ground_truth": "2026-06-02",
+          "prediction": "2026-06-02",
+          "status": "MATCH"
+        },
+        "seller_info.tax_code": {
+          "ground_truth": "0101234567",
+          "prediction": "0101234567",
+          "status": "MATCH"
+        },
+        "seller_info.legal_name": {
+          "ground_truth": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE",
+          "prediction": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE",
+          "status": "MATCH"
+        },
+        "buyer_info.tax_code": {
+          "ground_truth": "0308536477",
+          "prediction": "0308536477",
+          "status": "MATCH"
+        },
+        "buyer_info.legal_name": {
+          "ground_truth": "CÔNG TY TNHH THƯƠNG MẠI ALPHA",
+          "prediction": "CÔNG TY TNHH THƯƠNG MẠI ALPHA",
+          "status": "MATCH"
+        },
+        "totals.total_amount_before_tax": {
+          "ground_truth": 6000000,
+          "prediction": 6000000.0,
+          "status": "MATCH"
+        },
+        "totals.total_tax_amount": {
+          "ground_truth": 600000,
+          "prediction": 0.0,
+          "status": "VALUE_MISMATCH"
+        },
+        "totals.total_amount_after_tax": {
+          "ground_truth": 6600000,
+          "prediction": 6600000.0,
+          "status": "MATCH"
+        }
+      },
+      "document_perfect": false,
+      "error_count": 1
+    },
+    {
+      "document_id": "INV_20260602_0000008",
+      "fields": {
+        "invoice_info.invoice_no": {
+          "ground_truth": "0000008",
+          "prediction": "0000008",
+          "status": "MATCH"
+        },
+        "invoice_info.issue_date": {
+          "ground_truth": "2026-06-02",
+          "prediction": "2026-06-02",
+          "status": "MATCH"
+        },
+        "seller_info.tax_code": {
+          "ground_truth": "0101234567",
+          "prediction": "0101234567",
+          "status": "MATCH"
+        },
+        "seller_info.legal_name": {
+          "ground_truth": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE",
+          "prediction": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE",
+          "status": "MATCH"
+        },
+        "buyer_info.tax_code": {
+          "ground_truth": "0303678638",
+          "prediction": "0303678638",
+          "status": "MATCH"
+        },
+        "buyer_info.legal_name": {
+          "ground_truth": "CÔNG TY TNHH THƯƠNG MẠI ALPHA",
+          "prediction": "CÔNG TY TNHH THƯƠNG MẠI ALPHA",
+          "status": "MATCH"
+        },
+        "totals.total_amount_before_tax": {
+          "ground_truth": 5200000,
+          "prediction": 5200000.0,
+          "status": "MATCH"
+        },
+        "totals.total_tax_amount": {
+          "ground_truth": 520000,
+          "prediction": 0.0,
+          "status": "VALUE_MISMATCH"
+        },
+        "totals.total_amount_after_tax": {
+          "ground_truth": 5720000,
+          "prediction": 5720000.0,
+          "status": "MATCH"
+        }
+      },
+      "document_perfect": false,
+      "error_count": 1
+    },
+    {
+      "document_id": "INV_20260602_0000009",
+      "fields": {
+        "invoice_info.invoice_no": {
+          "ground_truth": "0000009",
+          "prediction": "0000009",
+          "status": "MATCH"
+        },
+        "invoice_info.issue_date": {
+          "ground_truth": "2026-06-02",
+          "prediction": "2026-06-02",
+          "status": "MATCH"
+        },
+        "seller_info.tax_code": {
+          "ground_truth": "0101234567",
+          "prediction": "0101234567",
+          "status": "MATCH"
+        },
+        "seller_info.legal_name": {
+          "ground_truth": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE",
+          "prediction": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE",
+          "status": "MATCH"
+        },
+        "buyer_info.tax_code": {
+          "ground_truth": "0303608513",
+          "prediction": "0303608513",
+          "status": "MATCH"
+        },
+        "buyer_info.legal_name": {
+          "ground_truth": "CÔNG TY CỔ PHẦN BETA",
+          "prediction": "CÔNG TY CỔ PHẦN BETA",
+          "status": "MATCH"
+        },
+        "totals.total_amount_before_tax": {
+          "ground_truth": 3800000,
+          "prediction": 2450000.0,
+          "status": "VALUE_MISMATCH"
+        },
+        "totals.total_tax_amount": {
+          "ground_truth": 380000,
+          "prediction": 0.0,
+          "status": "VALUE_MISMATCH"
+        },
+        "totals.total_amount_after_tax": {
+          "ground_truth": 4180000,
+          "prediction": 4180000.0,
+          "status": "MATCH"
+        }
+      },
+      "document_perfect": false,
+      "error_count": 2
+    },
+    {
+      "document_id": "INV_20260602_0000010",
+      "fields": {
+        "invoice_info.invoice_no": {
+          "ground_truth": "0000010",
+          "prediction": "0000010",
+          "status": "MATCH"
+        },
+        "invoice_info.issue_date": {
+          "ground_truth": "2026-06-02",
+          "prediction": "2026-06-02",
+          "status": "MATCH"
+        },
+        "seller_info.tax_code": {
+          "ground_truth": "0101234567",
+          "prediction": "0101234567",
+          "status": "MATCH"
+        },
+        "seller_info.legal_name": {
+          "ground_truth": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE",
+          "prediction": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE",
+          "status": "MATCH"
+        },
+        "buyer_info.tax_code": {
+          "ground_truth": "0302556017",
+          "prediction": "0302556017",
+          "status": "MATCH"
+        },
+        "buyer_info.legal_name": {
+          "ground_truth": "CÔNG TY TNHH THƯƠNG MẠI ALPHA",
+          "prediction": "CÔNG TY TNHH THƯƠNG MẠI ALPHA",
+          "status": "MATCH"
+        },
+        "totals.total_amount_before_tax": {
+          "ground_truth": 4200000,
+          "prediction": 4200000.0,
+          "status": "MATCH"
+        },
+        "totals.total_tax_amount": {
+          "ground_truth": 420000,
+          "prediction": 0.0,
+          "status": "VALUE_MISMATCH"
+        },
+        "totals.total_amount_after_tax": {
+          "ground_truth": 4620000,
+          "prediction": 4620000.0,
+          "status": "MATCH"
+        }
+      },
+      "document_perfect": false,
+      "error_count": 1
+    },
+    {
+      "document_id": "INV_20260602_0000011",
+      "fields": {
+        "invoice_info.invoice_no": {
+          "ground_truth": "0000011",
+          "prediction": "0000011",
+          "status": "MATCH"
+        },
+        "invoice_info.issue_date": {
+          "ground_truth": "2026-06-02",
+          "prediction": "2026-06-02",
+          "status": "MATCH"
+        },
+        "seller_info.tax_code": {
+          "ground_truth": "0101234567",
+          "prediction": "0101234567",
+          "status": "MATCH"
+        },
+        "seller_info.legal_name": {
+          "ground_truth": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE",
+          "prediction": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE",
+          "status": "MATCH"
+        },
+        "buyer_info.tax_code": {
+          "ground_truth": "0306770619",
+          "prediction": "0306770619",
+          "status": "MATCH"
+        },
+        "buyer_info.legal_name": {
+          "ground_truth": "CÔNG TY CỔ PHẦN BETA",
+          "prediction": "CÔNG TY CỔ PHẦN BETA",
+          "status": "MATCH"
+        },
+        "totals.total_amount_before_tax": {
+          "ground_truth": 6100000,
+          "prediction": 6100000.0,
+          "status": "MATCH"
+        },
+        "totals.total_tax_amount": {
+          "ground_truth": 610000,
+          "prediction": 0.0,
+          "status": "VALUE_MISMATCH"
+        },
+        "totals.total_amount_after_tax": {
+          "ground_truth": 6710000,
+          "prediction": 6710000.0,
+          "status": "MATCH"
+        }
+      },
+      "document_perfect": false,
+      "error_count": 1
+    },
+    {
+      "document_id": "INV_20260602_0000012",
+      "fields": {
+        "invoice_info.invoice_no": {
+          "ground_truth": "0000012",
+          "prediction": "0000012",
+          "status": "MATCH"
+        },
+        "invoice_info.issue_date": {
+          "ground_truth": "2026-06-02",
+          "prediction": "2026-06-02",
+          "status": "MATCH"
+        },
+        "seller_info.tax_code": {
+          "ground_truth": "0101234567",
+          "prediction": "0101234567",
+          "status": "MATCH"
+        },
+        "seller_info.legal_name": {
+          "ground_truth": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE",
+          "prediction": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE",
+          "status": "MATCH"
+        },
+        "buyer_info.tax_code": {
+          "ground_truth": "0308707870",
+          "prediction": "0308707870",
+          "status": "MATCH"
+        },
+        "buyer_info.legal_name": {
+          "ground_truth": "CÔNG TY TNHH THƯƠNG MẠI ALPHA",
+          "prediction": "CÔNG TY TNHH THƯƠNG MẠI ALPHA",
+          "status": "MATCH"
+        },
+        "totals.total_amount_before_tax": {
+          "ground_truth": 5200000,
+          "prediction": 4400000.0,
+          "status": "VALUE_MISMATCH"
+        },
+        "totals.total_tax_amount": {
+          "ground_truth": 520000,
+          "prediction": 0.0,
+          "status": "VALUE_MISMATCH"
+        },
+        "totals.total_amount_after_tax": {
+          "ground_truth": 5720000,
+          "prediction": 5720000.0,
+          "status": "MATCH"
+        }
+      },
+      "document_perfect": false,
+      "error_count": 2
+    },
+    {
+      "document_id": "INV_20260602_0000013",
+      "fields": {
+        "invoice_info.invoice_no": {
+          "ground_truth": "0000013",
+          "prediction": "0000013",
+          "status": "MATCH"
+        },
+        "invoice_info.issue_date": {
+          "ground_truth": "2026-06-02",
+          "prediction": "2026-06-02",
+          "status": "MATCH"
+        },
+        "seller_info.tax_code": {
+          "ground_truth": "0101234567",
+          "prediction": "0101234567",
+          "status": "MATCH"
+        },
+        "seller_info.legal_name": {
+          "ground_truth": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE",
+          "prediction": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE",
+          "status": "MATCH"
+        },
+        "buyer_info.tax_code": {
+          "ground_truth": "0302322047",
+          "prediction": "0302322047",
+          "status": "MATCH"
+        },
+        "buyer_info.legal_name": {
+          "ground_truth": "CÔNG TY CỔ PHẦN BETA",
+          "prediction": "CÔNG TY CỔ PHẦN BETA",
+          "status": "MATCH"
+        },
+        "totals.total_amount_before_tax": {
+          "ground_truth": 5900000,
+          "prediction": 5900000.0,
+          "status": "MATCH"
+        },
+        "totals.total_tax_amount": {
+          "ground_truth": 590000,
+          "prediction": 0.0,
+          "status": "VALUE_MISMATCH"
+        },
+        "totals.total_amount_after_tax": {
+          "ground_truth": 6490000,
+          "prediction": 6490000.0,
+          "status": "MATCH"
+        }
+      },
+      "document_perfect": false,
+      "error_count": 1
+    },
+    {
+      "document_id": "INV_20260602_0000014",
+      "fields": {
+        "invoice_info.invoice_no": {
+          "ground_truth": "0000014",
+          "prediction": "0000014",
+          "status": "MATCH"
+        },
+        "invoice_info.issue_date": {
+          "ground_truth": "2026-06-02",
+          "prediction": "2026-06-02",
+          "status": "MATCH"
+        },
+        "seller_info.tax_code": {
+          "ground_truth": "0101234567",
+          "prediction": "0101234567",
+          "status": "MATCH"
+        },
+        "seller_info.legal_name": {
+          "ground_truth": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE",
+          "prediction": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE",
+          "status": "MATCH"
+        },
+        "buyer_info.tax_code": {
+          "ground_truth": "0307067228",
+          "prediction": "0307067228",
+          "status": "MATCH"
+        },
+        "buyer_info.legal_name": {
+          "ground_truth": "DOANH NGHIỆP TƯ NHÂN GAMMA",
+          "prediction": "DOANH NGHIỆP TƯ NHÂN GAMMA",
+          "status": "MATCH"
+        },
+        "totals.total_amount_before_tax": {
+          "ground_truth": 5700000,
+          "prediction": 5700000.0,
+          "status": "MATCH"
+        },
+        "totals.total_tax_amount": {
+          "ground_truth": 570000,
+          "prediction": 0.0,
+          "status": "VALUE_MISMATCH"
+        },
+        "totals.total_amount_after_tax": {
+          "ground_truth": 6270000,
+          "prediction": 6270000.0,
+          "status": "MATCH"
+        }
+      },
+      "document_perfect": false,
+      "error_count": 1
+    },
+    {
+      "document_id": "INV_20260602_0000015",
+      "fields": {
+        "invoice_info.invoice_no": {
+          "ground_truth": "0000015",
+          "prediction": "0000015",
+          "status": "MATCH"
+        },
+        "invoice_info.issue_date": {
+          "ground_truth": "2026-06-02",
+          "prediction": "2026-06-02",
+          "status": "MATCH"
+        },
+        "seller_info.tax_code": {
+          "ground_truth": "0101234567",
+          "prediction": "0101234567",
+          "status": "MATCH"
+        },
+        "seller_info.legal_name": {
+          "ground_truth": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE",
+          "prediction": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE",
+          "status": "MATCH"
+        },
+        "buyer_info.tax_code": {
+          "ground_truth": "0302166941",
+          "prediction": "0302166941",
+          "status": "MATCH"
+        },
+        "buyer_info.legal_name": {
+          "ground_truth": "DOANH NGHIỆP TƯ NHÂN GAMMA",
+          "prediction": "DOANH NGHIỆP TƯ NHÂN GAMMA",
+          "status": "MATCH"
+        },
+        "totals.total_amount_before_tax": {
+          "ground_truth": 2400000,
+          "prediction": 1320000.0,
+          "status": "VALUE_MISMATCH"
+        },
+        "totals.total_tax_amount": {
+          "ground_truth": 240000,
+          "prediction": 0.0,
+          "status": "VALUE_MISMATCH"
+        },
+        "totals.total_amount_after_tax": {
+          "ground_truth": 2640000,
+          "prediction": 2640000.0,
+          "status": "MATCH"
+        }
+      },
+      "document_perfect": false,
+      "error_count": 2
+    },
+    {
+      "document_id": "INV_20260602_0000016",
+      "fields": {
+        "invoice_info.invoice_no": {
+          "ground_truth": "0000016",
+          "prediction": "0000016",
+          "status": "MATCH"
+        },
+        "invoice_info.issue_date": {
+          "ground_truth": "2026-06-02",
+          "prediction": "2026-06-02",
+          "status": "MATCH"
+        },
+        "seller_info.tax_code": {
+          "ground_truth": "0101234567",
+          "prediction": "0101234567",
+          "status": "MATCH"
+        },
+        "seller_info.legal_name": {
+          "ground_truth": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE",
+          "prediction": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE",
+          "status": "MATCH"
+        },
+        "buyer_info.tax_code": {
+          "ground_truth": "0302338687",
+          "prediction": "0302338687",
+          "status": "MATCH"
+        },
+        "buyer_info.legal_name": {
+          "ground_truth": "CÔNG TY CỔ PHẦN BETA",
+          "prediction": "CÔNG TY CỔ PHẦN BETA",
+          "status": "MATCH"
+        },
+        "totals.total_amount_before_tax": {
+          "ground_truth": 3200000,
+          "prediction": 3200000.0,
+          "status": "MATCH"
+        },
+        "totals.total_tax_amount": {
+          "ground_truth": 320000,
+          "prediction": 0.0,
+          "status": "VALUE_MISMATCH"
+        },
+        "totals.total_amount_after_tax": {
+          "ground_truth": 3520000,
+          "prediction": 3520000.0,
+          "status": "MATCH"
+        }
+      },
+      "document_perfect": false,
+      "error_count": 1
+    },
+    {
+      "document_id": "INV_20260602_0000017",
+      "fields": {
+        "invoice_info.invoice_no": {
+          "ground_truth": "0000017",
+          "prediction": "0000017",
+          "status": "MATCH"
+        },
+        "invoice_info.issue_date": {
+          "ground_truth": "2026-06-02",
+          "prediction": "2026-06-02",
+          "status": "MATCH"
+        },
+        "seller_info.tax_code": {
+          "ground_truth": "0101234567",
+          "prediction": "0101234567",
+          "status": "MATCH"
+        },
+        "seller_info.legal_name": {
+          "ground_truth": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE",
+          "prediction": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE",
+          "status": "MATCH"
+        },
+        "buyer_info.tax_code": {
+          "ground_truth": "0305663623",
+          "prediction": "0305663623",
+          "status": "MATCH"
+        },
+        "buyer_info.legal_name": {
+          "ground_truth": "CÔNG TY CỔ PHẦN BETA",
+          "prediction": "CÔNG TY CỔ PHẦN BETA",
+          "status": "MATCH"
+        },
+        "totals.total_amount_before_tax": {
+          "ground_truth": 5500000,
+          "prediction": 5500000.0,
+          "status": "MATCH"
+        },
+        "totals.total_tax_amount": {
+          "ground_truth": 550000,
+          "prediction": 0.0,
+          "status": "VALUE_MISMATCH"
+        },
+        "totals.total_amount_after_tax": {
+          "ground_truth": 6050000,
+          "prediction": 6050000.0,
+          "status": "MATCH"
+        }
+      },
+      "document_perfect": false,
+      "error_count": 1
+    },
+    {
+      "document_id": "INV_20260602_0000018",
+      "fields": {
+        "invoice_info.invoice_no": {
+          "ground_truth": "0000018",
+          "prediction": "0000018",
+          "status": "MATCH"
+        },
+        "invoice_info.issue_date": {
+          "ground_truth": "2026-06-02",
+          "prediction": "2026-06-02",
+          "status": "MATCH"
+        },
+        "seller_info.tax_code": {
+          "ground_truth": "0101234567",
+          "prediction": "0101234567",
+          "status": "MATCH"
+        },
+        "seller_info.legal_name": {
+          "ground_truth": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE",
+          "prediction": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE",
+          "status": "MATCH"
+        },
+        "buyer_info.tax_code": {
+          "ground_truth": "0307210606",
+          "prediction": "0307210606",
+          "status": "MATCH"
+        },
+        "buyer_info.legal_name": {
+          "ground_truth": "CÔNG TY TNHH THƯƠNG MẠI ALPHA",
+          "prediction": "CÔNG TY TNHH THƯƠNG MẠI ALPHA",
+          "status": "MATCH"
+        },
+        "totals.total_amount_before_tax": {
+          "ground_truth": 4300000,
+          "prediction": 4300000.0,
+          "status": "MATCH"
+        },
+        "totals.total_tax_amount": {
+          "ground_truth": 430000,
+          "prediction": 0.0,
+          "status": "VALUE_MISMATCH"
+        },
+        "totals.total_amount_after_tax": {
+          "ground_truth": 4730000,
+          "prediction": 4730000.0,
+          "status": "MATCH"
+        }
+      },
+      "document_perfect": false,
+      "error_count": 1
+    },
+    {
+      "document_id": "INV_20260602_0000019",
+      "fields": {
+        "invoice_info.invoice_no": {
+          "ground_truth": "0000019",
+          "prediction": "0000019",
+          "status": "MATCH"
+        },
+        "invoice_info.issue_date": {
+          "ground_truth": "2026-06-02",
+          "prediction": "2026-06-02",
+          "status": "MATCH"
+        },
+        "seller_info.tax_code": {
+          "ground_truth": "0101234567",
+          "prediction": "0101234567",
+          "status": "MATCH"
+        },
+        "seller_info.legal_name": {
+          "ground_truth": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE",
+          "prediction": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE",
+          "status": "MATCH"
+        },
+        "buyer_info.tax_code": {
+          "ground_truth": "0305479144",
+          "prediction": "0305479144",
+          "status": "MATCH"
+        },
+        "buyer_info.legal_name": {
+          "ground_truth": "DOANH NGHIỆP TƯ NHÂN GAMMA",
+          "prediction": "DOANH NGHIỆP TƯ NHÂN GAMMA",
+          "status": "MATCH"
+        },
+        "totals.total_amount_before_tax": {
+          "ground_truth": 2400000,
+          "prediction": 2400000.0,
+          "status": "MATCH"
+        },
+        "totals.total_tax_amount": {
+          "ground_truth": 240000,
+          "prediction": 0.0,
+          "status": "VALUE_MISMATCH"
+        },
+        "totals.total_amount_after_tax": {
+          "ground_truth": 2640000,
+          "prediction": 2640000.0,
+          "status": "MATCH"
+        }
+      },
+      "document_perfect": false,
+      "error_count": 1
+    },
+    {
+      "document_id": "INV_20260602_0000020",
+      "fields": {
+        "invoice_info.invoice_no": {
+          "ground_truth": "0000020",
+          "prediction": "0000020",
+          "status": "MATCH"
+        },
+        "invoice_info.issue_date": {
+          "ground_truth": "2026-06-02",
+          "prediction": "2026-06-02",
+          "status": "MATCH"
+        },
+        "seller_info.tax_code": {
+          "ground_truth": "0101234567",
+          "prediction": "0101234567",
+          "status": "MATCH"
+        },
+        "seller_info.legal_name": {
+          "ground_truth": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE",
+          "prediction": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE",
+          "status": "MATCH"
+        },
+        "buyer_info.tax_code": {
+          "ground_truth": "0305107245",
+          "prediction": "0305107245",
+          "status": "MATCH"
+        },
+        "buyer_info.legal_name": {
+          "ground_truth": "DOANH NGHIỆP TƯ NHÂN GAMMA",
+          "prediction": "DOANH NGHIỆP TƯ NHÂN GAMMA",
+          "status": "MATCH"
+        },
+        "totals.total_amount_before_tax": {
+          "ground_truth": 3900000,
+          "prediction": 3900000.0,
+          "status": "MATCH"
+        },
+        "totals.total_tax_amount": {
+          "ground_truth": 390000,
+          "prediction": 0.0,
+          "status": "VALUE_MISMATCH"
+        },
+        "totals.total_amount_after_tax": {
+          "ground_truth": 4290000,
+          "prediction": 4290000.0,
+          "status": "MATCH"
+        }
+      },
+      "document_perfect": false,
+      "error_count": 1
+    }
+  ]
+}
