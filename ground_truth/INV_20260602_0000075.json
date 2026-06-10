@@ -1,0 +1,20 @@
+{
+  "template_type": "DEFAULT",
+  "invoice_info": {
+    "invoice_no": "0000075",
+    "issue_date": "2026-06-02"
+  },
+  "seller_info": {
+    "tax_code": "0101234567",
+    "legal_name": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE"
+  },
+  "buyer_info": {
+    "tax_code": "0309937982",
+    "legal_name": "DOANH NGHIỆP TƯ NHÂN GAMMA"
+  },
+  "totals": {
+    "total_amount_before_tax": 5300000,
+    "total_tax_amount": 530000,
+    "total_amount_after_tax": 5830000
+  }
+}

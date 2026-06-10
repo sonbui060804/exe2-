@@ -1,0 +1,20 @@
+{
+  "template_type": "DEFAULT",
+  "invoice_info": {
+    "invoice_no": "0000038",
+    "issue_date": "2026-06-02"
+  },
+  "seller_info": {
+    "tax_code": "0101234567",
+    "legal_name": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE"
+  },
+  "buyer_info": {
+    "tax_code": "0303253031",
+    "legal_name": "CÔNG TY TNHH THƯƠNG MẠI ALPHA"
+  },
+  "totals": {
+    "total_amount_before_tax": 3400000,
+    "total_tax_amount": 340000,
+    "total_amount_after_tax": 3740000
+  }
+}

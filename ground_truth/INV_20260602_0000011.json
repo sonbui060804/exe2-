@@ -1,5 +1,5 @@
 {
-  "template_type": "FAST",
+  "template_type": "MISA",
   "invoice_info": {
     "invoice_no": "0000011",
     "issue_date": "2026-06-02"
@@ -9,12 +9,12 @@
     "legal_name": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE"
   },
   "buyer_info": {
-    "tax_code": "0307067228",
-    "legal_name": "DOANH NGHIỆP TƯ NHÂN GAMMA"
+    "tax_code": "0306279418",
+    "legal_name": "CÔNG TY XUẤT NHẬP KHẨU Z"
   },
   "totals": {
-    "total_amount_before_tax": 5700000,
-    "total_tax_amount": 570000,
-    "total_amount_after_tax": 6270000
+    "total_amount_before_tax": 4300000,
+    "total_tax_amount": 430000,
+    "total_amount_after_tax": 4730000
   }
 }

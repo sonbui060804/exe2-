@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 function Dashboard({ onSelectInvoice }) {
   const [invoices, setInvoices] = useState([]);
-  const [quota, setQuota] = useState({ used: 0, limit: 50 });
+  const [quota, setQuota] = useState({ used: 0, limit: 200 });
   const [activeTab, setActiveTab] = useState('pending'); // 'pending' | 'approved'
   
   // Fake upload state
@@ -81,9 +81,9 @@ function Dashboard({ onSelectInvoice }) {
           <h3>Xuất Dữ Liệu Hàng Loạt (Export)</h3>
           <p style={{marginBottom: '1rem', color: 'var(--text-muted)'}}>Sau khi duyệt xong, tải file về máy để nạp vào ERP.</p>
           <div style={{display: 'flex', gap: '10px'}}>
-            <button className="btn-back" style={{borderColor: 'green', color: 'green'}}>Tải Excel</button>
-            <button className="btn-back" style={{borderColor: 'blue', color: 'blue'}}>Tải XML MISA</button>
-            <button className="btn-back" style={{borderColor: 'orange', color: 'orange'}}>Tải CSV FAST</button>
+            <button className="btn-back" style={{borderColor: 'green', color: 'green'}} onClick={() => window.open('http://localhost:8000/api/export/excel', '_blank')}>Tải Excel</button>
+            <button className="btn-back" style={{borderColor: 'blue', color: 'blue'}} onClick={() => window.open('http://localhost:8000/api/export/misa', '_blank')}>Tải XML MISA</button>
+            <button className="btn-back" style={{borderColor: 'orange', color: 'orange'}} onClick={() => window.open('http://localhost:8000/api/export/fast', '_blank')}>Tải CSV FAST</button>
           </div>
         </div>
       </div>
@@ -102,9 +102,33 @@ function Dashboard({ onSelectInvoice }) {
             </div>
           </div>
         ) : (
-          <button className="btn-enter" onClick={handleUpload} disabled={quota.used >= quota.limit} style={{opacity: quota.used >= quota.limit ? 0.5 : 1}}>
-            Chọn File (Từ máy tính)
-          </button>
+          <>
+            <input 
+              type="file" 
+              multiple 
+              accept="image/*,.pdf" 
+              style={{ display: 'none' }} 
+              id="file-upload" 
+              onChange={handleUpload} 
+            />
+            <label 
+              htmlFor="file-upload" 
+              className="btn-enter" 
+              style={{
+                display: 'inline-block',
+                cursor: quota.used >= quota.limit ? 'not-allowed' : 'pointer',
+                opacity: quota.used >= quota.limit ? 0.5 : 1
+              }}
+              onClick={(e) => {
+                if (quota.used >= quota.limit) {
+                  e.preventDefault();
+                  alert("Bạn đã dùng hết gói Freemium (50/50). Vui lòng nâng cấp gói Cloud SaaS hoặc On-Premise để upload tiếp!");
+                }
+              }}
+            >
+              Chọn File (Từ máy tính)
+            </label>
+          </>
         )}
       </div>
 

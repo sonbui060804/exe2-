@@ -1,5 +1,5 @@
 {
-  "template_type": "DEFAULT",
+  "template_type": "FAST",
   "invoice_info": {
     "invoice_no": "0000017",
     "issue_date": "2026-06-02"
@@ -9,12 +9,12 @@
     "legal_name": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE"
   },
   "buyer_info": {
-    "tax_code": "0304684531",
+    "tax_code": "0307273233",
     "legal_name": "CÔNG TY CỔ PHẦN BETA"
   },
   "totals": {
-    "total_amount_before_tax": 3600000,
-    "total_tax_amount": 360000,
-    "total_amount_after_tax": 3960000
+    "total_amount_before_tax": 2500000,
+    "total_tax_amount": 250000,
+    "total_amount_after_tax": 2750000
   }
 }

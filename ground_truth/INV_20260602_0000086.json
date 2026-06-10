@@ -1,0 +1,20 @@
+{
+  "template_type": "MISA",
+  "invoice_info": {
+    "invoice_no": "0000086",
+    "issue_date": "2026-06-02"
+  },
+  "seller_info": {
+    "tax_code": "0101234567",
+    "legal_name": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE"
+  },
+  "buyer_info": {
+    "tax_code": "0304256752",
+    "legal_name": "CÔNG TY TNHH THƯƠNG MẠI ALPHA"
+  },
+  "totals": {
+    "total_amount_before_tax": 4000000,
+    "total_tax_amount": 400000,
+    "total_amount_after_tax": 4400000
+  }
+}

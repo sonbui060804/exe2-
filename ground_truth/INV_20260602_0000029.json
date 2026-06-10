@@ -9,12 +9,12 @@
     "legal_name": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE"
   },
   "buyer_info": {
-    "tax_code": "0306007072",
-    "legal_name": "CÔNG TY TNHH THƯƠNG MẠI ALPHA"
+    "tax_code": "0301983738",
+    "legal_name": "TẬP ĐOÀN ĐỈNH CAO"
   },
   "totals": {
-    "total_amount_before_tax": 6100000,
-    "total_tax_amount": 610000,
-    "total_amount_after_tax": 6710000
+    "total_amount_before_tax": 3700000,
+    "total_tax_amount": 370000,
+    "total_amount_after_tax": 4070000
   }
 }

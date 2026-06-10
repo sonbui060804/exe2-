@@ -17,9 +17,9 @@ def run_pipeline():
     print("Starting AI Orchestrator Pipeline (Local Mode)...")
     db = get_db()
     
-    # Đếm số lượng hóa đơn đã xử lý để chặn nếu quá 50 (Gài bẫy Freemium)
+    # Đếm số lượng hóa đơn đã xử lý để chặn nếu quá 200 (Gài bẫy Freemium)
     total_processed = db.invoices.count_documents({})
-    QUOTA_LIMIT = 50
+    QUOTA_LIMIT = 200
     
     raw_files = list(RAW_DIR.glob("*.png")) + list(RAW_DIR.glob("*.jpg"))
     if not raw_files:
@@ -32,7 +32,7 @@ def run_pipeline():
     
     for img_path in raw_files:
         if total_processed >= QUOTA_LIMIT:
-            print(f"⚠️ QUOTA REACHED ({QUOTA_LIMIT}/{QUOTA_LIMIT}). System locked for new processing.")
+            print(f"[WARNING] QUOTA REACHED ({QUOTA_LIMIT}/{QUOTA_LIMIT}). System locked for new processing.")
             break
             
         doc_id = img_path.stem

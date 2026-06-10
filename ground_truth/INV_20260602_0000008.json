@@ -1,5 +1,5 @@
 {
-  "template_type": "MISA",
+  "template_type": "FAST",
   "invoice_info": {
     "invoice_no": "0000008",
     "issue_date": "2026-06-02"
@@ -9,12 +9,12 @@
     "legal_name": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE"
   },
   "buyer_info": {
-    "tax_code": "0307374122",
-    "legal_name": "CÔNG TY TNHH THƯƠNG MẠI ALPHA"
+    "tax_code": "0307210606",
+    "legal_name": "CÔNG TY CỔ PHẦN BETA"
   },
   "totals": {
-    "total_amount_before_tax": 3200000,
-    "total_tax_amount": 320000,
-    "total_amount_after_tax": 3520000
+    "total_amount_before_tax": 4300000,
+    "total_tax_amount": 430000,
+    "total_amount_after_tax": 4730000
   }
 }

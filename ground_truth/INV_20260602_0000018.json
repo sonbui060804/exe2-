@@ -9,12 +9,12 @@
     "legal_name": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE"
   },
   "buyer_info": {
-    "tax_code": "0306292423",
-    "legal_name": "CÔNG TY TNHH THƯƠNG MẠI ALPHA"
+    "tax_code": "0306159230",
+    "legal_name": "DOANH NGHIỆP TƯ NHÂN GAMMA"
   },
   "totals": {
-    "total_amount_before_tax": 4800000,
-    "total_tax_amount": 480000,
-    "total_amount_after_tax": 5280000
+    "total_amount_before_tax": 3100000,
+    "total_tax_amount": 310000,
+    "total_amount_after_tax": 3410000
   }
 }

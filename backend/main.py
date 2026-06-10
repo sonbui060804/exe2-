@@ -84,7 +84,26 @@ def upload_invoices():
     db = get_db()
     # Check Quota Gài Bẫy (Lock-in)
     count = db.invoices.count_documents({})
-    if count >= 50:
-        raise HTTPException(status_code=403, detail="Tài khoản đã hết Quota miễn phí (50/50). Vui lòng nâng cấp gói SaaS hoặc On-Premise!")
+    if count >= 200:
+        raise HTTPException(status_code=403, detail="Tài khoản đã hết Quota miễn phí (200/200). Vui lòng nâng cấp gói SaaS hoặc On-Premise!")
     return {"message": "Upload thành công vào hàng đợi AI"}
 
+from fastapi.responses import FileResponse
+from export_data import export_all
+
+@app.get("/api/export/{format_type}")
+def export_data(format_type: str):
+    # Luôn chạy lệnh xuất để có file mới nhất
+    export_all()
+    
+    if format_type == "excel":
+        file_path = BASE_DIR / "exports" / "excel" / "invoice_summary.csv"
+        return FileResponse(path=file_path, filename="invoice_summary.csv", media_type="text/csv")
+    elif format_type == "misa":
+        file_path = BASE_DIR / "exports" / "misa" / "misa_import.xml"
+        return FileResponse(path=file_path, filename="misa_import.xml", media_type="application/xml")
+    elif format_type == "fast":
+        file_path = BASE_DIR / "exports" / "fast" / "fast_import.csv"
+        return FileResponse(path=file_path, filename="fast_import.csv", media_type="text/csv")
+    
+    raise HTTPException(status_code=400, detail="Invalid format")

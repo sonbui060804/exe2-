@@ -1,0 +1,20 @@
+{
+  "template_type": "FAST",
+  "invoice_info": {
+    "invoice_no": "0000039",
+    "issue_date": "2026-06-02"
+  },
+  "seller_info": {
+    "tax_code": "0101234567",
+    "legal_name": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AI-INVOICE"
+  },
+  "buyer_info": {
+    "tax_code": "0304533779",
+    "legal_name": "CÔNG TY XUẤT NHẬP KHẨU Z"
+  },
+  "totals": {
+    "total_amount_before_tax": 4200000,
+    "total_tax_amount": 420000,
+    "total_amount_after_tax": 4620000
+  }
+}
